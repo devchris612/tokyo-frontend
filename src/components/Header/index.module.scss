@@ -1,0 +1,29 @@
+.page_header {
+    @apply bg-headerbg sticky top-0 z-50 flex flex-wrap gap-4 items-center justify-between  px-4 py-2;
+
+    .page_header_left_panel {
+        @apply flex items-center gap-8 lg:gap-16;
+    }
+
+    .page_header_image {
+        width: 100px;
+
+       @screen lg {
+            width: 200px;
+       }
+    }
+
+    .page_header_searchbar {
+        font-size: 14px;
+        width: 200px;
+
+        @screen lg {
+            width: 400px;
+        }
+    }
+
+    .page_header_searchdropdown {
+        @apply w-full absolute shadow-lg left-0 top-12 z-50 bg-white rounded flex flex-col overflow-y-auto;
+        max-height: 400px;
+      }
+}
